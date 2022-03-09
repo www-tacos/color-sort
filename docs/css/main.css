@@ -1,0 +1,41 @@
+* {
+  box-sizing: border-box;
+  font-size: xx-small;
+}
+
+/* スクロールバーを常時表示 */
+html {
+  overflow-y: scroll;
+}
+
+html,body,table {
+  width: 100%;
+  max-width: 720px;
+  text-align: center;
+  margin: 0px auto;
+}
+
+th.col {
+  width: 33%;
+}
+
+td.cell {
+  color: #000000;
+  text-shadow:
+    1px 1px 0 #FFFFFF,
+    -1px -1px 0 #FFFFFF,
+    -1px 1px 0 #FFFFFF,
+    1px -1px 0 #FFFFFF,
+    0px 1px 0 #FFFFFF,
+    0 -1px 0 #FFFFFF,
+    -1px 0 0 #FFFFFF,
+    1px 0 0 #FFFFFF;
+}
+
+div.row {
+  margin: 1em auto;
+}
+
+div.border {
+  border-bottom: 2px solid #303030;
+}

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset='utf-8'>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <title>Sort Rainbow</title>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <link rel='stylesheet' type='text/css' media='screen' href='css/button-with-load.css'>
+  <link rel='stylesheet' type='text/css' media='screen' href='css/main.css'>
+</head>
+<body>
+  <div class="row">
+    色の数：<input id="COLOR_AMT" type="number" min="10" step="10" value="200" required>
+  </div>
+  <div class="row">
+    明度の分割数：<input id="GRP_CNT" type="number" min="2" value="3" required>
+  </div>
+  <div class="row">
+    <button class="button-with-load" onclick="ButtonWithLoad.alertWrap(show, this)">
+      <span class="button-with-load__text">描画</span>
+    </button>
+  </div>
+  <div class="row border"></div>
+  <div class="row">
+    <table>
+      <thead>
+        <tr class="fit">
+          <th class="col">オリジナル</th>
+          <th class="col">単純ソート</th>
+          <th class="col">明度別ソート</th>
+        </tr>
+      </thead>
+      <tbody id="target"></tbody>
+    </table>
+  </div>
+
+<script src='js/class.js'></script>
+<script src='js/main.js'></script>
+</body>
+</html>
