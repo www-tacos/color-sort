@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset='utf-8'>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <title>Sort ML Idols</title>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <link rel='stylesheet' type='text/css' media='screen' href='css/button-with-load.min.css'>
+  <link rel='stylesheet' type='text/css' media='screen' href='css/main.min.css'>
+</head>
+<body>
+  <div class="row">
+    明度の分割数：<input id="PARAM_GRP_CNT" type="number" min="1" value="3" required>
+  </div>
+  <div class="row">
+    <button class="button-with-load" onclick="ButtonWithLoad.alertWrap(show, this)">
+      <span class="button-with-load__text">描画</span>
+    </button>
+  </div>
+  <div class="row border"></div>
+  <div class="row">
+    <table>
+      <thead>
+        <tr class="fit">
+          <th class="col">オリジナル</th>
+          <th class="col">単純ソート</th>
+          <th class="col">明度別ソート</th>
+        </tr>
+      </thead>
+      <tbody id="target"></tbody>
+    </table>
+  </div>
+
+<script src='js/classButtonWithLoad.min.js'></script>
+<script src='js/classMyColor.min.js'></script>
+<script src='js/ml.min.js'></script>
+</body>
+</html>
