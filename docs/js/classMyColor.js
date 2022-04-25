@@ -232,7 +232,7 @@ class Color {
       colorListSorteds[i] = new Array()
     }
     for(const c of colorList) {
-      const i = Math.floor(valueSplitCount * c.HSV.V / c.HSV.V_MAX)
+      const i = Math.floor(valueSplitCount * c.HSV.V / (c.HSV.V_MAX + 1))
       colorListSorteds[i].push(c)
     }
     for(const cls of colorListSorteds) {
